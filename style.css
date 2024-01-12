@@ -4,6 +4,12 @@ body {
     position: relative;
 }
 
+/* Navbar Section */
+.Fixed {
+    position: fixed; /* Fix the position for scrolling */
+    width: 100%;
+}
+
 .Navbar {
     display: flex;
     justify-content: space-between;
@@ -11,12 +17,13 @@ body {
 
 .navtab {
     display: flex;
-    flex-direction: row;
     padding: 10px;
     gap: 50px;
     color: rgb(255, 255, 255);
+    margin-right: 10px;
 }
 
+/* Home Section */
 .Home {
     margin-top: 15%;
     position: absolute;
@@ -60,7 +67,7 @@ body {
     margin-right: 10px;
 }
 
-.viewworkcontainer:hover .gg-arrow-right {
+.viewworkcontainer:hover .gg-arrow-right { /* Hover over to turn arrow downwards */
     transform: rotateZ(-270deg);
 }
 
@@ -68,13 +75,30 @@ body {
     color: aquamarine;
 }
 
+/* About Section */
 .About {
     margin-top: 50%;
     font-size: 30px;
     display: flex;
     margin-left: 160px;
     margin-bottom: 20px;
+    max-width: 75px;
+    padding-bottom:2px; /* Creating underline effect */
+    background-image: linear-gradient(#eb6f6f 0 0);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+
 }
+
+.About:hover {
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+}
+
 
 .aboutleft {
     float: left;
@@ -87,3 +111,5 @@ body {
     max-width: 800px;
     margin-top: 5px;
 }
+
+/* Skills Section */
