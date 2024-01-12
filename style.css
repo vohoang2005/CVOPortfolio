@@ -63,3 +63,27 @@ body {
 .viewworkcontainer:hover .gg-arrow-right {
     transform: rotateZ(-270deg);
 }
+
+.viewworkcontainer:hover {
+    color: aquamarine;
+}
+
+.About {
+    margin-top: 50%;
+    font-size: 30px;
+    display: flex;
+    margin-left: 160px;
+    margin-bottom: 20px;
+}
+
+.aboutleft {
+    float: left;
+    max-width: 300px;
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+.aboutright {
+    max-width: 800px;
+    margin-top: 5px;
+}
