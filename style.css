@@ -35,4 +35,31 @@ body {
 
 .lightblue {
     color: lightblue;
+    margin-bottom: 30px;
+}
+
+.lightcoral {
+    color: lightcoral;
+}
+
+.viewworkcontainer {
+    border: 2px solid white;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.viewwork {
+    padding-left: 10px;
+}
+
+.gg-arrow-right {
+    float: right;
+    padding: 10px;
+    color: lightblue;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.viewworkcontainer:hover .gg-arrow-right {
+    transform: rotateZ(-270deg);
 }
