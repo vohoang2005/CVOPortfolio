@@ -1,0 +1,16 @@
+body {
+    width: 90%;
+    background-color: aliceblue;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navtab {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 50px;
+}
