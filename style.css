@@ -93,7 +93,6 @@ body {
     margin-top: 50%;
     font-size: 30px;
     display: flex;
-    margin-left: 160px;
     margin-bottom: 20px;
     max-width: 75px;
     padding-bottom:2px; /* Creating underline effect */
@@ -123,17 +122,32 @@ body {
 .aboutright {
     max-width: 800px;
     margin-top: 5px;
+    color: antiquewhite;
 }
 
 /* Skills Section */
 .Skills {
+    max-width: 70px;
     margin-top: 50%;
     font-size: 30px;
+    padding-bottom:2px; /* Creating underline effect */
+    background-image: linear-gradient(#eb6f6f 0 0);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+}
 
+.Skills:hover {
+    background-position: 100% 100%;
+    background-size: 100% 2px;
 }
 
 .skillsent {
     font-size: 20px;
+    color: antiquewhite;
 }
 
 .skillset {
@@ -142,8 +156,16 @@ body {
 
 .row {
     grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+    max-width: 1000px;
 }
 
 .images {
     padding: 20px;
+    transition: transform .5s;
+    border: 2px solid black;
+    box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
+}
+
+.images:hover {
+    transform: scale(1.25);
 }
