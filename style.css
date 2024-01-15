@@ -13,6 +13,7 @@ body {
 .Navbar {
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .navtab {
@@ -28,6 +29,7 @@ body {
     margin-top: 15%;
     position: absolute;
     left: 30%;
+    z-index: -1;
 }
 
 .name {
@@ -95,6 +97,7 @@ body {
     display: flex;
     margin-bottom: 20px;
     max-width: 75px;
+    z-index: -1;
     padding-bottom:2px; /* Creating underline effect */
     background-image: linear-gradient(#eb6f6f 0 0);
     background-position: 0 100%;
@@ -123,6 +126,7 @@ body {
     max-width: 800px;
     margin-top: 5px;
     color: antiquewhite;
+    z-index: -1;
 }
 
 /* Skills Section */
@@ -168,4 +172,63 @@ body {
 
 .images:hover {
     transform: scale(1.25);
+}
+
+/* Projects Section */ 
+.Projects {
+    max-width: 100px;
+    margin-top: 50%;
+    font-size: 30px;
+    padding-bottom:2px; /* Creating underline effect */
+    background-image: linear-gradient(#eb6f6f 0 0);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+}
+
+.Projects:hover {
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+}
+
+.projectset {
+    display: grid;
+}
+
+.projectrow {
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    max-width: 1000px;
+}
+
+.projectimage {
+    padding: 20px;
+    transition: transform .5s;
+    border-radius: 10%;
+}
+
+.projectimage:hover {
+    transform: scale(1.13);
+}
+
+/* Footer Section */
+.Contact {
+    max-width: 95px;
+    margin-top: 50%;
+    font-size: 30px;
+    padding-bottom:2px; /* Creating underline effect */
+    background-image: linear-gradient(#eb6f6f 0 0);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+}
+
+.Contact:hover {
+    background-position: 100% 100%;
+    background-size: 100% 2px;
 }
