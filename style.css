@@ -23,6 +23,10 @@ body {
     margin-right: 10px;
 }
 
+.navtab > * {
+    color: white;
+}
+
 /* Home Section */
 .Home {
     margin-top: 15%;
